@@ -409,28 +409,97 @@ Now let’s use the **Manufacturer** slicer to analyze one manufacturer at a tim
     
      ![](Images/powerbi-02-41.png)
      
+The card visual gives us the Revenue as we filter and cross-filter the visuals.
 
+Notice that all key dimensions are in their table with related attributes, except the date. For example, **Product** attributes are in the **Product** table. Now let’s create a **Date** table.
 
+102. Navigate to the **Data** view by clicking on the **Data** icon in the left panel.
 
+103. From the ribbon, click on **Table Tools**, then click on **New Table**.
 
+Notice that a new table is created in the **Fields** section on the right and that the formula bar opens.
 
+104. Enter `Date =CALENDAR (DATE(2014,1,1), DATE(2021,12,31))` in the formula bar and click on the checkmark. A Date table with a Date column is created.
 
+We are using two DAX functions: the **CALENDAR** function, which takes the start and end data, and the **DATE** function, which takes the **year**, **month**, and **date** Fields. 
 
+For this lab, we will create Dates from 2014 to 2021, since we have data for those years. We can also add more Fields, like **Year**, **Month**, **Week**, etc., to this table by using DAX functions. 
 
+Notice that the **Date** field is of the type **Date/Time**. Let’s change it to the **Date** data type.
 
+105. Click on the **Date** field in the **Date** table.
 
+106. From the ribbon, click **Column Tools**, click **Data type**, and then click **Date**.
 
+     ![](Images/powerbi-02-42.png)
 
+Next, we need to create a relationship between the newly created **Date** table and the **Sales** table. 
 
+107. From the ribbon, click **Column Tools**, and then click **Manage Relationships**.
 
+108. A **Manage Relationships** dialog box opens. Click the **New** button.
 
+109. A **Create Relationship** dialog box opens. Click **Date** from the top dropdown menu.
 
+110. Click **Sales** from the second dropdown menu.
 
+111. Highlight the **Date** Field in both tables.
 
+112. Click **OK** to close the **Create relationship** dialog box.
 
+     ![](Images/powerbi-02-43.png)
 
+113. Click **Close** to close the **Manage relationships** dialog box.
 
+114. Navigate to the Report view by clicking on the **Report** icon in the left panel.
 
+Notice that the Revenue by Date chart looks different. Let’s fix it
+
+115. Click the **Revenue by Date** visual.
+
+116. From the **Axis**, click on the “**X**” to remove the **Date** field.
+
+     ![](Images/powerbi-02-44.png)
+
+117. From the **Fields** section, expand the **Date** table.
+
+118. Now drag the **Date** field to the **Axis** section.
+
+     ![](Images/powerbi-02-45.png)
+
+Notice that the new **Date** field behavior is like it was previously.
+
+Since there are now two Date Fields, it may be confusing to know which one to use. To accommodate this, let’s hide the **Date** field in the **Sales** table.
+
+119. From the **Fields** section, click on the **three dots** next to the **Date** field in the **Sales** table and select **Hide**
+
+     ![](Images/powerbi-02-46.png)
+
+120. In the same way, hide **Country**, **ProductID**, **Zip**, and **ZipCountry** in the **Sales** table as well.
+
+121. Now hide **ZipCountry** from the **Geography** table.
+
+122. Hide **ManufacturerID** from **Manufacturer** table.
+
+123. Hide **ProductID** and **ManufacturerID** from **Product** table.
+
+**Tip**: It is a best practice to hide unused Fields in reports.
+
+Now let’s get back to our data story, Australia, VanArsdel and 2021. Let’s check if the spike occurred in a specific region in Australia.
+
+124. Click the **Revenue by Country** visual.
+
+125. From the **Fields** section, drag the **State** field from the **Geography** table below the **Country** field in the **Axis** section.
+
+126. Drag the **District** field below the **State** field in the **Axis** section.
+
+We have just created a hierarchy.
+
+   ![](Images/powerbi-02-47.png)
+
+127. Make sure that **VanArsdel** is selected in the **Manufacturer** slicer.
+
+128. Enable **Drill mode** by clicking the down arrow of the **Revenue by Country** visual.
 
 
 
