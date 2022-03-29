@@ -501,11 +501,82 @@ We have just created a hierarchy.
 
 128. Enable **Drill mode** by clicking the down arrow of the **Revenue by Country** visual.
 
+     ![](Images/powerbi-02-48.png)
+
+129. Click **Australia** to drill down to the **State** level.
+
+130. From the **Revenue by Year** visual click **2021** and notice what happens to the **Revenue by Country** and the **State** visual.
+
+131. Now, **Drill up** to the **country** level.
+
+132. Disable drill mode by clicking the down arrow again.
+
+Now let’s analyze the data by product. We’ll start by creating a product hierarchy.
+
+133. From the **Fields** section, click on the **ellipse** next to the **Category** field in the **Product** table.
+
+134. Click **Create Hierarchy**.
+
+     ![](Images/powerbi-02-49.png)
+
+Notice that a new field called **Category Hierarchy** is created in the Product table.
+
+135. Double-click **Category Hierarchy** and rename it to **Product Hierarchy**.
+
+     ![](Images/powerbi-02-50.png)  
+
+136. Click the **ellipse** next to **Segment**.
+
+137. Click **Add to Hierarchy**, and then click **Product Hierarchy**.
+
+     ![](Images/powerbi-02-51.png)
+
+138. Click the **ellipse** next to **Product**.
+
+139. Click **Add to Hierarchy**, and then click **Product Hierarchy**.
+
+We have now created a Product Hierarchy with the priority of Category, Segment, and then Product. 
+
+140. Click on the white space in the canvas. From the **Visualizations** section, click **Clustered bar chart**.
+
+141. From the **Fields** section, expand the **Product** table.
+
+142. Click the checkbox next to the **Product Hierarchy**. Notice the complete hierarchy is selected.
+
+143. From the **Fields** section, expand the **Sales** table.
+
+144. Click the checkbox next to the **Revenue** field.
+
+145. Let’s edit interactions for the new chart.
+
+146. Click the Format tab and click edit interations
+
+147. Click on the **Revenue by Country** visual and change the **Revenue by Category** visual to **filter**
+
+     ![](Images/powerbi-02-52.png)
+
+148. Do the same thing with the **Revenue by Year** visual, change the interaction of the **Revenue by Category** to **filter**
+
+149. We also need to change the interactions of the other charts. Click on the Revenue by **Category** visual and change the **Revenue by Year** visual to a **filter** action.
+
+150. Click the **filter** interaction on the **Revenue by Country** visual as well
+
+151. Click the **format** tab and click **Edit interactions** to turn it off
+
+152. Ensure **Australia** and **2021** are selected.
+
+153. Let’s get back to the **Revenue by Category** visual
+
+     ![](Images/powerbi-02-53.png)
+
+154. Enable drill-down mode in the **Revenue by Category** chart by clicking on the down arrow.
+
+     ![](Images/powerbi-02-54.png)
+
+155. Click on **Urban**.
+
+156. In the **Revenue by Country** visual, if you are not at the Country level drill up to Country level anddisable drill down
+
+     ![](Images/powerbi-02-55.png)
 
 
-
-
-
-
-
-     
