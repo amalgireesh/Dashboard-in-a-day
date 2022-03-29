@@ -635,6 +635,118 @@ Let’s add a percent of the total field. This will give us a better perspective
 
 175. Now click on **Urban** (the word, not the + sign)
 
+     ![](Images/powerbi-02-61.png) 
+
+176. Make sure you have **Australia** and **2021** selected on the other charts.
+
+Now let’s look at the **Extreme** category for Australia over time.
+
+   ![](Images/powerbi-02-62.png)
+
+177. In the **Revenue by Year** visual click the **2021** column and click **Australia** in the **Revenue by Country** visual. Notice that the **Extreme** segment has around 40% of the grand total.
+
+178. In the **Revenue by Year** visual click the **2021** column to remove the filter.
+
+Now let’s drill down into the **Extreme Segment** and figure out if a Product stands out.
+
+179. In the **matrix** visual, click the **Extreme** row (the word, not the + sign) to drill down to the Product level.
+
+180. Resize the visual as needed.
+
+181. Hover over the matrix visual and then click the ellipse in the top right corner. 
+
+182. Click **Sort By %GT Revenue** and then click **Sort Descending**.
+
+     ![](Images/powerbi-02-63.png)
+
+We can now see the top Products. 
+
+183. Ensure **2021** is selected in the **Revenue by Year** visual, and **Australia** in the **Revenue by Country** visual.. Notice that Maximus UE-04 and 21 are the top products. Also, notice that Product 04 has nearly 7% of the grand total and has a big spike.
+
+     ![](Images/powerbi-02-64.png)
+     
+184. In the Revenue by Year visual, click the 2021 column to remove the filter.
+
+Earlier we created a calculated column named **ZipCountry**. Now let’s create a **Percent Growth** measure so we can compare sales over time. We are going to do this in two steps.
+
+But first, what’s the difference between a measure and a calculated column?
+  - A **Calculated column** is evaluated row by row. We extend a table by adding calculated columns.
+  - A **Measure** is used when we want to aggregate values from many rows in a table.
+
+185. In the **Fields** section, click the **Sales** table.
+
+186. From the ribbon, click **Table Tools**, then click **New Measure**. A formula bar opens.
+
+187. Enter `PY Sales = CALCULATE(SUM(Sales[Revenue]), SAMEPERIODLASTYEAR('Date'[Date]))`
+
+     ![](Images/powerbi-02-64.png)
+
+188. Click the checkmark next to the formula bar. You will see the **PY Sales** measure in the **Sales** table.
+
+Let’s create another measure.
+
+189. In the **Fields** section, hover over the Sales table.
+
+190. Click on the **ellipse** in the right corner.
+
+191. Click **New Measure** from the dialog box. A formula bar opens.
+
+192. Enter `% Growth = DIVIDE(SUM(Sales[Revenue])-[PY Sales],[PY Sales])`
+
+     ![](Images/powerbi-02-65.png)
+
+193. Click the checkmark next to the formula bar. You will see **% Growth** measure in the **Sales** table.
+
+194. Click the **matrix** visual.
+
+195. In the **Fields** section, click the checkbox next to the newly created **PY Sales and % Growth** measures in the **Sales** table.
+
+Notice that the Fields need to be formatted.
+
+196. From the **Fields** section, click the **% Growth** field.
+
+197. From the ribbon, click **Measure Tools**, click **Format**, and then click **Percentage**.
+
+     ![](Images/powerbi-02-66.png)
+
+198. Similarly, from the **Fields** section, and then click the **PY Sales** field.
+
+199. From the ribbon, click **Measure Tools**, click **Format**, and then click **Currency**, if it isn’t already formatted Currency .
+
+200. Similarly, from the **Fields** section, and then click the **Revenue** field.
+
+201. From the ribbon, click **Measure Tools**, click **Format**, and then click **Currency** if it isn’t already formatted to Currency
+
+202. Ensure that **Australia** is selected and In the **Revenue by Year** visual, Ctrl + click the **2021** column. 
+
+Notice that Maximus UE-04 has nearly 158% growth compared to last year.
+
+   ![](Images/powerbi-02-67.png)
+
+## References
+
+Dashboard in a Day introduces you to some of the key functions available in Power BI. In the ribbon of the Power BI Desktop, the Help section has links to some great resources.
+
+  ![](Images/powerbi-01-53.png)    
+
+Here are a few more resources that will help you with your next steps with Power BI.
+
+  - Getting started: http://powerbi.com
+  - Power BI Desktop: https://powerbi.microsoft.com/desktop
+  - Power BI Mobile: https://powerbi.microsoft.com/mobile
+  - Community site https://community.powerbi.com/
+  - Power BI Getting started support page: https://support.powerbi.com/knowledgebase/articles/430814-get-started-with-power-bi
+  - Support site https://support.powerbi.com/
+  - Feature requests https://ideas.powerbi.com/forums/265200-power-bi-ideas
+  - New ideas for using Power BI https://aka.ms/PBI_Comm_Ideas
+  - Power BI Courses http://aka.ms/pbi-create-reports
+  - Power Platform https://powerplatform.microsoft.com/en-us/instructor-led-training/
+  - Power Apps [Business Apps | Microsoft Power Apps](https://powerapps.microsoft.com/en-us/)
+  - Power Automate [Power Automate | Microsoft Power Platform](https://powerapps.microsoft.com/en-us/)
+  - Dataverse [What is Microsoft Dataverse? - Power Apps | Microsoft Docs](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/data-platform-intro)
+
+
+
 
 
 
