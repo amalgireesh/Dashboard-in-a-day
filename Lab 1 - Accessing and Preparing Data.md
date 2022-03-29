@@ -249,7 +249,7 @@ There is also an option to select each individual file in the folder (using **Ex
 
 In this section, we will explore methods to [transform data in the data model](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-shape-and-combine-data/). Transforming the data by renaming tables, updating data types, and appending tables together ensures that the data is ready to be used for reporting. In some instances, this means cleaning the data up so that similar sets of data can be combined. In other instances, groups of data are renamed so that they are more easilyrecognized by end users and report writing is simplified.
 
-# Power BI Desktop - Renaming tables
+### Power BI Desktop - Renaming tables
 
 The Query Editor window should appear as shown below.
 
@@ -274,7 +274,7 @@ The Query Editor window should appear as shown below.
 
 >**Note**: It is a best practice to provide descriptive query names and column names. These names are used in visuals and in the Q&A section, which is covered later in the lab.  
     
-# Power BI Desktop – Filling empty values
+### Power BI Desktop – Filling empty values
 
 In our scenario, some of the data is not in the right format. Power BI provides extensive transformation capabilities to clean and prepare data to meet your needs. Let’s start with the Product query.
 
@@ -292,7 +292,7 @@ Notice that the **Category** column has a lot of null values. Hover over the gre
 
 Notice how all the null values are filled with the appropriate Category values.
 
-# Power BI Desktop – Splitting columns
+### Power BI Desktop – Splitting columns
 
 In the Product query, notice the Product column. It looks like the product name and product segmentare concatenated into one field with a pipe (|) separator. Let’s split them into two columns. This will be useful when we build visuals, so we can analyze based on both fields.
 
@@ -316,7 +316,7 @@ In the Product query, notice the Product column. It looks like the product name 
 
 In this scenario, the delimiter occurs only once, therefore the Product column is split into two columns.
 
-# Power BI Desktop – Renaming columns
+### Power BI Desktop – Renaming columns
 
 Let’s rename the columns.
 
@@ -330,7 +330,7 @@ Let’s rename the columns.
 
     ![](Images/powerbi-01-29.png)
     
-# Power BI Desktop – Using Column From Examples to split columns
+### Power BI Desktop – Using Column From Examples to split columns
 
 In the Product query, notice that the Price column has price and currency concatenated into one field. To do any calculations we only need the numeric value. Therefore, we need to split this field into two columns. We can use the split feature like earlier or we can use **Column From Examples**. **Column From Examples** is handy in scenarios where the pattern is more complex than simply a delimiter.
 
@@ -384,7 +384,7 @@ Now that we have split Price column into the MSRP and Currency columns, we don�
 
     ![](Images/powerbi-01-33.png)
     
-# Power BI Desktop – Removing unwanted rows
+### Power BI Desktop – Removing unwanted rows
 
 In the **Geography** query, notice that the first two rows are informational. They are not part of the data. Similarly, in the Manufacturer query, the last couple of rows are not part of the data. Let’s remove them so we have a clean dataset.
 
@@ -422,7 +422,7 @@ Notice that the column **Zip** was changed to the number data type. Let’s chan
 
     ![](Images/powerbi-01-36.png)
 
-# Power BI Desktop – Transposing data
+### Power BI Desktop – Transposing data
 
 44. From the left panel, click the **Manufacturer** Query. Notice that the **ManufacturerID**, **Manufacturer**, and **Logo** data is laid across in rows. Also notice that the header is not useful. We need to transpose the table to meet our needs.
 
@@ -440,7 +440,7 @@ Notice that now the **Manufacturer** table is laid out the way we need it with a
 
 Also notice that on the right panel under **APPLIED STEPS** you will see the list of transformations and steps that have been applied. You can navigate through each change made to the data by clicking on the step. Steps can also be deleted by clicking on the **X** that appears to the left of the step. The properties of each step can be reviewed by clicking on the **gear** to the right of the step. 
 
-# Power BI Desktop – Appending queries
+### Power BI Desktop – Appending queries
 
 To analyze the Sales of all countries, it is convenient to have a single **Sales** table. To do this, you need to append all the rows from the **International Sales** query to the **Sales** query.
 
