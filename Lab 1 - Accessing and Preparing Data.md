@@ -233,11 +233,13 @@ There is also an option to select each individual file in the folder (using **Ex
 
 47. You will only see Australia as shown in the figure. By default, Power BI only loads the first 1000 rows. Click **Load more** to validate that you have data from the various countries included.
 
-48. ![](Images/powerbi-01-23.png)
+48. 
 
-    You will see the countries (blank), Australia, Canada, Germany, Japan, Mexico, and Nigeria.
+   ![](Images/powerbi-01-23.png)
+   
+   You will see the countries (blank), Australia, Canada, Germany, Japan, Mexico, and Nigeria.
 
-    ![](Images/powerbi-01-24.png)
+   ![](Images/powerbi-01-24.png)
     
 49. Click **OK**.
 
