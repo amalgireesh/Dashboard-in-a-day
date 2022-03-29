@@ -579,4 +579,66 @@ We have now created a Product Hierarchy with the priority of Category, Segment, 
 
      ![](Images/powerbi-02-55.png)
 
+157. Click **Australia** in the **Revenue by Country** visual
+
+158. **Ctrl+Click 2021** from the Revenue by Year visual. Notice that the sales in the **Extreme** category are higher than the **Convenience** and **Moderation** segments.
+
+     ![](Images/powerbi-02-56.png)
+
+Let’s investigate further…
+
+159. Click the down arrow at the top of **Revenue by Country** visual to enable the drill model.
+
+160. Click **Australia** to drill down to the **State** level.
+
+     ![](Images/powerbi-02-57.png)
+
+161. Click **2021** in the Revenue by Year visual.
+
+162. **Ctrl+Click** the **Extreme** Segment in the Revenue by Category and Segment visual.
+
+Notice that there is no significant spike by State.
+
+163. Click **Extreme** again to remove cross-filtering between the visuals.
+
+164. **Drill up** to the **Category level** in the Revenue by Category visual.
+
+165. Disable drill mode by clicking the down arrow again.
+
+166. **Drill up** to **Country** in the Revenue by Country and State visual
+
+167. Disable drill mode in the Revenue by Country visual
+
+Now let’s add a Matrix visual so we can view the data in rows and columns. We can apply conditional formatting to the matrix visual to highlight the outliers.
+
+168. Click on the **Revenue by Category** clustered bar chart and change it to a **Matrix** visual.
+
+     ![](Images/powerbi-02-58.png)
+
+169. Click the + (plus sign) next to the **Urban** row to drill down.
+
+     ![](Images/powerbi-02-59.png) 
+
+Let’s add a percent of the total field. This will give us a better perspective.
+
+170. Navigate away from the **Format** section to the **Fields** pane.
+
+171. From the **Fields** section, drag the **Revenue** field from the **Sales** table to below the existing **Revenue** field in the **Values** section. It will look like you have Revenue twice in the fields pane.
+
+     ![](Images/powerbi-02-60.png)
+
+172. Click the **arrow** next to the newly added **Revenue** field.
+
+173. From the menu, hover over **Show value as** and then click **Percent of grand total**.
+
+174. Drill up to **Category** level Enable drill mode on the **Revenue by Category** visual
+
+175. Now click on **Urban** (the word, not the + sign)
+
+
+
+
+
+
+
 
