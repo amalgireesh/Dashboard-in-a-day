@@ -565,7 +565,7 @@ You have now successfully completed import and data shaping operations and are r
 
 76. Click **File** and then click **Save** to save the file after the data loading is complete. Name the file as “**MyFirstPowerBIModel**”. Save the file in the DIAD Reports (**\DIAD\Reports**) folder.
 
-77. On the left panel, click **Data icon** ![](Images/powerbi-01-51.png) to view the data that was loaded. If you need to open Power Query editor, navigate to Home -> Transform Data -> Transform data.
+77. On the left panel, click **Data ![](Images/powerbi-01-51.png) icon**  to view the data that was loaded. If you need to open Power Query editor, navigate to Home -> Transform Data -> Transform data.
 
     ![](Images/powerbi-01-52.png)
      
