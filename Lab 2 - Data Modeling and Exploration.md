@@ -122,10 +122,8 @@ concatenate the **Zip** and **Country** columns to create a unique value field.
     ![](Images/powerbi-02-11.png)
     
 23. Now we are ready to combine the Zip and Country columns into a new column called **ZipCountry**, separated by a comma. To create this column called ZipCountry, type the following calculation in the editor.
-
-         ```
-         ZipCountry = Sales[Zip] & "," & Sales[Country]
-         ```
+         
+         ` ZipCountry = Sales[Zip] & "," & Sales[Country] `
 
     ![](Images/powerbi-02-12.png)
 
