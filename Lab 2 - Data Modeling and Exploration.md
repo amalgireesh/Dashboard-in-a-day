@@ -123,7 +123,9 @@ concatenate the **Zip** and **Country** columns to create a unique value field.
     
 23. Now we are ready to combine the Zip and Country columns into a new column called **ZipCountry**, separated by a comma. To create this column called ZipCountry, type the following calculation in the editor.
          
-         ` ZipCountry = Sales[Zip] & "," & Sales[Country] `
+    ```bash
+    ZipCountry = Sales[Zip] & "," & Sales[Country]
+    ```
 
     ![](Images/powerbi-02-12.png)
 
@@ -145,7 +147,9 @@ concatenate the **Zip** and **Country** columns to create a unique value field.
 
 26. A formula bar now appears. Enter the following DAX expression in the formula bar: 
 
-          `ZipCountry = Geography[Zip] & "," & Geography[Country]` 
+    ```bash
+    ZipCountry = Geography[Zip] & "," & Geography[Country]
+    ```
           
     ![](Images/powerbi-02-15.png)
 
