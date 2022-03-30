@@ -683,7 +683,7 @@ But first, what’s the difference between a measure and a calculated column?
 
 187. Enter `PY Sales = CALCULATE(SUM(Sales[Revenue]), SAMEPERIODLASTYEAR('Date'[Date]))`
 
-     ![](Images/powerbi-02-64.png)
+     ![](Images/powerbi-02-65.png)
 
 188. Click the checkmark next to the formula bar. You will see the **PY Sales** measure in the **Sales** table.
 
@@ -697,7 +697,7 @@ Let’s create another measure.
 
 192. Enter `% Growth = DIVIDE(SUM(Sales[Revenue])-[PY Sales],[PY Sales])`
 
-     ![](Images/powerbi-02-65.png)
+     ![](Images/powerbi-02-66.png)
 
 193. Click the checkmark next to the formula bar. You will see **% Growth** measure in the **Sales** table.
 
@@ -711,7 +711,7 @@ Notice that the Fields need to be formatted.
 
 197. From the ribbon, click **Measure Tools**, click **Format**, and then click **Percentage**.
 
-     ![](Images/powerbi-02-66.png)
+     ![](Images/powerbi-02-67.png)
 
 198. Similarly, from the **Fields** section, and then click the **PY Sales** field.
 
@@ -725,7 +725,7 @@ Notice that the Fields need to be formatted.
 
 Notice that Maximus UE-04 has nearly 158% growth compared to last year.
 
-   ![](Images/powerbi-02-67.png)
+   ![](Images/powerbi-02-68.png)
 
 ## References
 
