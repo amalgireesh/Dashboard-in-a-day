@@ -1,4 +1,4 @@
-![Microsoft Power Platform.](Images/powerbi-welcome.png 'Microsoft Power Platform')
+![Microsoft Power Platform.](Images/powerbi-welcome-2.png 'Microsoft Power Platform')
 
 # Lab 2 - Data Modeling and Exploration
 
