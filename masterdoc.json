@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "Dashboard in a Day",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Dashboard-in-a-day/main/Lab%201%20-%20Accessing%20and%20Preparing%20Data.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Dashboard-in-a-day/main/Lab%202%20-%20Data%20Modeling%20and%20Exploration.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Dashboard-in-a-day/main/Lab%203%20-%20Data%20Visualization.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Dashboard-in-a-day/main/Lab%204%20-%20Publishing%20and%20Accessing%20Reports.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Dashboard-in-a-day/main/Lab%205%20-%20Collaboration.md",
+        "Order": 5
+      }
+    ]
+  }
+]
