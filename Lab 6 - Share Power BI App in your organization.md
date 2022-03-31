@@ -10,7 +10,7 @@
 - [Power BI – Share a Report](#power-bi-share-a-report)
   - [Power BI – Link settings](#power-bi-link-settings)
   - [Power BI – Manage Permissions to a Report](#power-bi-manage-permissions-to-a-report)
-- [Power BI – Share a dashboard](#power-bi-share-a-dashboard)
+- [Power BI – Share a Dashboard](#power-bi-share-a-dashboard)
   - [Power BI – Manage Permissions to a Dashboard](#power-bi-manage-permissions-to-a-dashboard)
 - [References](#references)
 
@@ -122,6 +122,6 @@ Links for **People with existing access** do not have any additional settings be
 
 >**Note**: Each report cannot have more than 1,000 sharing links. In the unlikely case that your report hits this max limit, we recommend removing links that give **Specific people** access and instead grant those users direct access.
 
-## Power BI – Share a dashboard
+## Power BI – Share a Dashboard
 
 
